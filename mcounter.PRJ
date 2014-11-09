@@ -1,0 +1,52 @@
+[Project ID]
+Signature=UE Proj: v.1
+[Project Information]
+Project Directory=
+Use Relative Directory=1
+Relative to Project File=1
+Project Wordfile=
+Project Tagfile=
+Create Tagfile=0
+[Files]
+0=dayweek.c
+1=event.c
+2=event.def
+3=mcounter.c
+[Open Files]
+Open File0=mcounter.cpp
+Open File Pos0=8213
+Open File Line0=7438
+Active File Index=0
+Open File Window Pos0=2,3,-1,-1,-4,-23,110,110,1166,604
+Open File1=event.def
+Open File Pos1=0
+Open File Line1=0
+Open File Window Pos1=0,1,-1,-1,-4,-23,132,132,1192,630
+Open File2=event.cpp
+Open File Pos2=2957
+Open File Line2=1879
+Open File Window Pos2=0,1,-1,-1,-4,-23,154,154,1214,652
+Open File3=dayweek.cpp
+Open File Pos3=7025
+Open File Line3=6175
+Open File Window Pos3=0,1,-1,-1,-4,-23,176,176,1236,674
+Open File4=com.cpp
+Active File Display Mode=3
+Open File Pos4=2
+Open File Line4=4277
+Open File Window Pos4=0,1,-1,-1,-4,-23,88,88,1148,586
+Open File5=keyb.cpp
+Open File Pos5=598
+Open File Line5=0
+Open File Window Pos5=0,1,-1,-1,-4,-23,110,110,1170,608
+Open File6=virtual.cpp
+Open File Pos6=1926
+Open File Line6=1259
+Open File Window Pos6=0,1,-1,-1,-4,-23,132,132,1192,630
+Open File7=virtual.h
+Open File Pos7=119
+Open File Line7=0
+Open File Window Pos7=0,1,-1,-1,-4,-23,154,154,1214,652
+Open File8=
+[Group]
+1=

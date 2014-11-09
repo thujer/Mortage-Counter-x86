@@ -1,0 +1,60 @@
+
+    // asctime converts date and time to ASCII
+    char      *asctime(const struct tm *tblock);
+
+    // ctime converts date and time to a string
+	char      *ctime(const time_t *time);
+
+    // Converts the time in the structure *t into a calendar time with the same format used by the time function.
+    // The original values of the fields tm_sec, tm_min, tm_hour, tm_mday, and tm_mon are not restricted to the ranges described in the tm structure.
+    // If the fields are not in their proper ranges, mktime adjusts them.
+    time_t mktime(struct tm *t);
+
+    // time gives the current time, in seconds, elapsed since 00:00:00 GMT, January 1, 1970. It stores that value in the location *timer, provided that timer is not a null pointer.
+	time_t     time(time_t *timer);                           // time gets time of day
+
+    // stime sets the system time and date, measured in seconds from 00:00:00 GMT, January 1, 1970. tp points to the value of the time.
+	int        stime(time_t *tp);                             // stime sets system date and time
+
+    // gmtime converts date and time to Greenwich Mean Time (GMT)
+	struct tm *gmtime(const time_t *timer);
+
+    // localtime converts date and time to a structure
+	struct tm *localtime(const time_t *timer);
+
+    // difftime calculates the elapsed time in seconds, from time1 to time2.
+    double     difftime(time_t time2, time_t time1);
+
+    void       ftime(struct timeb *buf);                      Stores current time in timeb structure
+
+    // strftime formats the time in *t into the array *s according to the format specifications (a format string) in *fmt.
+    size_t _cdecl strftime(char *s, size_t maxsize, const char *fmt,   const struct tm *t);
+
+	void       _dos_getdate(struct dosdate_t *datep);
+	void       _dos_setdate(struct dosdate_t *datep);
+	void       getdate(struct date *datep);
+	void       setdate(struct date *datep);
+	void       _dos_gettime(struct dostime_t *timep);
+	unsigned   _dos_settime(struct dostime_t *timep);
+	void       gettime(struct time *timep);
+	void       settime(struct time *timep);
+
+
+    struct tm {
+
+      int tm_sec;   /* Seconds */
+      int tm_min;   /* Minutes */
+      int tm_hour;  /* Hour (0--23) */
+      int tm_mday;  /* Day of month (1--31) */
+      int tm_mon;   /* Month (0--11) */
+      int tm_year;  /* Year (calendar year minus 1900) */
+      int tm_wday;  /* Weekday (0--6; Sunday = 0) */
+      int tm_yday;  /* Day of year (0--365) */
+      int tm_isdst; /* 0 if daylight savings time is not in effect) */
+
+    };
+
+    1. Ziskat aktualni cas a zname datum ve time_t formatu
+     - Nacist aktualni datum a prevest na time_t format            time_t time(NULL)
+     - Prevest zname datum na time_t format
+    3. zjistit rozdil v sekundach pomoci difftime

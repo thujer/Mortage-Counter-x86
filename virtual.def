@@ -1,0 +1,10 @@
+
+typedef enum {
+        WHOLE_NUM,              // vrati pointer na zacatek bufferu - buffer obsahuje nuly na zacatku
+        SKIP_ZEROS,             // vynecha pocatecni nuly na zacatku bufferu
+        ZEROS_TO_SPACES,        // zmeni pocatecni nuly na mezery
+};
+
+
+#define  VIRTUAL_BUF_SIZE    13
+

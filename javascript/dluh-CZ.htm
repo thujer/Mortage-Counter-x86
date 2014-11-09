@@ -1,0 +1,62 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1250">
+<meta name="GENERATOR" content="Microsoft FrontPage 4.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<title>Státní dluh ČR</title>
+</head>
+
+<body>
+
+                 <table>
+
+                 <TD style="BACKGROUND-COLOR: #c0c0c0" HEIGHT="5">
+            <FONT face="Verdana, arial" color=black size=1>
+            <B>Státní dluh ČR (Kč):</B><BR></FONT>
+          </TD>
+
+          <TR>
+          <TD bgcolor=black HEIGHT="52" >
+
+         <SCRIPT language=JavaScript>
+toDate = new Date(2002, 12, 25, 18, 15, 0);
+
+function calcDiff()
+{
+            _curr=new Date();
+            diff=(_curr.getTime() - toDate.getTime())/1000;
+            //months=(_curr.getYear()-2002)*12+_curr.getMonth()-toDate.getMonth()
+
+            //document.writeln('_curr:  ',_curr.getTime(),'<br>');
+            //document.writeln('toDate: ',toDate.getTime(),'<br>');
+
+            num = diff;
+            //document.writeln('DIFF1:',num,'<br>');
+
+            num *= 3800;
+            //document.writeln('DIFF2:',num,'<br>');
+
+            num += 318000000000;
+            //document.writeln('DIFF3:',num,'<br>');
+
+
+        document.counter.num2.value=Math.round(num);
+        setTimeout("calcDiff()",100);
+}
+
+</SCRIPT>
+
+ <DIV ALIGN = center>
+ <FORM name=counter>
+ <FONT face="Arial CE" size=2><INPUT size=13 name=num2 enabled></FONT>
+ </DIV>
+
+<SCRIPT language=JavaScript>
+calcDiff();
+</SCRIPT>
+
+
+
+</body>
+

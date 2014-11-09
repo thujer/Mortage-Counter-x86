@@ -1,0 +1,33 @@
+
+typedef enum {
+
+        EVENT_STARTUP = 1,                 // spusteni systemu
+        EVENT_LOOP_TEST_END,               // ukonceni testu rychlosti smycky
+
+        EVENT_PIN_SWITCH_SMS_SIMUL_CHANGE, // zmena polohy switche SMS SIMUL
+        EVENT_PIN_SWITCH_BRIDGE_CHANGE,    // zmena polohy switche BRIDGE
+        EVENT_PIN_SWITCH_LOG_CHANGE,       // zmena polohy switche LOG
+        EVENT_PIN_SWITCH_CONFIG_CHANGE,    // zmena polohy switche CONFIG
+
+        EVENT_SMS_REC_READ,                // nalezena prichozi prectena SMS
+        EVENT_SMS_REC_UNREAD,              // nalezena prichozi neprectena SMS
+        EVENT_SMS_STO_UNSENT,              // nalezena neodeslana SMS
+        EVENT_SMS_STO_SENT,                // nalezena odeslana SMS
+        EVENT_SMS_SENDER,                  // nalezeno cislo odesilatele
+
+        EVENT_GSM_DRIVER_FREE,             // fronta prikazu GSM driveru vyprazdnena
+        EVENT_GSM_OPERATOR_UPDATE,         // Nacteno ID operatora
+        EVENT_GSM_CREDIT_UPDATE,           // Stav kreditu aktualizovan
+        EVENT_GSM_SIGNAL_UPDATE,           // Utlum signalu aktualizovan
+        EVENT_GSM_END_OF_SMS,              // Konec SMS pri rozpoznavani
+        EVENT_GSM_INCOMING_SMS_NOTIFY,     // Zprava o ulozeni prichozi SMS
+
+        EVENT_EEPROM_TASK_BUFFER_FREE,     // Vyprazdneni bufferu uloh driveru EEPROM
+
+        EVENT_DATE_WORKING_FINISHED,       // DATE: dokonceni vypoctu
+
+        EVENT_TIME_100MS,                  // casova udalost
+
+        EVENT_NEVER,                       // ladici udalost, nikdy neni vykonana (uzitecne pro nepouzite funkce)
+} t_event_id;
+
